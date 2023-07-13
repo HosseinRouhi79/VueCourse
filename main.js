@@ -6,6 +6,9 @@ new Vue({
     methods: {
       changeMessage: function(event){
         this.message = event.target.value;
+      },
+      sayHello: function(){
+        return "Hello!"
       }
     }
   });
