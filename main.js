@@ -4,7 +4,8 @@ new Vue({
       message: 'Hello World',
       title: 'Vue.js',
       link: 'https://google.com',
-      otherLink:'<a href="https://google.com">Google2</a>'
+      otherLink:'<a href="https://google.com">Google2</a>',
+      counter:0
     },
     methods: {
       changeMessage: function(event){
@@ -14,6 +15,9 @@ new Vue({
         // return "Hello!"
         this.title = "Golang"
         return this.title
+      },
+      increase: function(){
+        this.counter++
       }
     }
   });

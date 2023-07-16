@@ -16,10 +16,13 @@
         <br>
         <!-- <h1><a href="{{link}}">Google</a></h3>   the false method -->
         <h3><a v-bind:href="link">Google</a></h3>    <!--v-bind-->
-            <hr>
-            <p v-html="otherLink"></p>  <!--v-html-->
-
-      </div>
+        <hr>
+        <p v-html="otherLink"></p>  <!--v-html-->
+        <hr>
+        <button style="padding: 14px 40px; background-color: #f44336" v-on:click="increase">Click</button>
+        <br>
+        <strong>{{counter}}</strong>
+    </div>
 </body>
 </html>
 <script src="main.js"></script>
