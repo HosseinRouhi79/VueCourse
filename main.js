@@ -11,6 +11,7 @@ new Vue({
       },
       sayHello: function(){
         // return "Hello!"
+        this.title = "Golang"
         return this.title
       }
     }
