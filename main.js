@@ -5,7 +5,9 @@ new Vue({
       title: 'Vue.js',
       link: 'https://google.com',
       otherLink:'<a href="https://google.com">Google2</a>',
-      counter:0
+      counter:0,
+      x:0,
+      y:0,
     },
     methods: {
       changeMessage: function(event){
@@ -18,6 +20,10 @@ new Vue({
       },
       increase: function(){
         this.counter++
+      },
+      updateCoordinates: function(event){
+        this.x = event.clientX,
+        this.y = event.clientY
       }
     }
   });
